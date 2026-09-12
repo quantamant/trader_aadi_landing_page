@@ -1,4 +1,5 @@
 import './style.css'
+import { Analytics } from '@vercel/analytics/react';
 
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
@@ -9,6 +10,7 @@ import FinalCTA from './sections/FinalCTA'
 
 function App() {
   return (
+   <>
     <main className="page">
       <Navbar />
       <Hero />
@@ -25,6 +27,9 @@ function App() {
         </p>
       </div>
     </main>
+
+    <Analytics/>
+   </>
   )
 }
 
