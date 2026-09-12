@@ -310,7 +310,14 @@ h2 span {
   gap: 30px;
   margin-bottom: 20px;
 }
-
+.vip-header .vip-title{
+  font-size: 30px;
+  color: #f0cc01;
+  border: 2px solid #f0cc01;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 .vip-header h2 {
   font-size: 30px;
 }

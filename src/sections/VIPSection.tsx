@@ -40,7 +40,9 @@ function VIPSection() {
       <div className="vip-header">
         <div>
           <SectionTag>02 / VIP EXPERIENCE</SectionTag>
-
+<h2 className="vip-title">🎯 Proper Guideline সহ Trading শিখতে চাইলে আমাদের Personal Signal + VIP Group-এ Join করতে পারেন।
+<br/>
+</h2>
           <h2>
             <span>💎</span> VIP Group
           </h2>
