@@ -605,3 +605,15 @@ h2 span {
     display: none;
   }
 }
+
+
+.lock-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #030914;
+  color: #f5f9fc;
+  text-align: center;
+}
