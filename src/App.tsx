@@ -1,25 +1,29 @@
-import { TELEGRAM_URL } from "./components/CTA"
-import { profileImage } from "./components/HeroProfileImage"
-import Hero from "./sections/Hero"
+import './style.css'
 
-
-
-
-
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
+import SkillSection from './sections/SkillSection'
+import VIPSection from './sections/VIPSection'
+import JourneySection from './sections/JourneySection'
+import FinalCTA from './sections/FinalCTA'
 
 function App() {
   return (
     <main className="page">
-      <header className="navbar">
-        <a className="brand" href={TELEGRAM_URL} aria-label="Trader Aadi Telegram channel">
-          <img src={profileImage} alt="Trader Aadi" />
-        </a>
+      <Navbar />
+      <Hero />
 
-        <a className="top-cta" href={TELEGRAM_URL} target="_blank" rel="noreferrer">
-          Join Telegram
-        </a>
-      </header>
-      <Hero/>
+      <div className="content">
+        <SkillSection />
+        <VIPSection />
+        <JourneySection />
+        <FinalCTA />
+
+        <p className="disclaimer">
+          Educational content only. Trading involves substantial risk and
+          losses can occur. No profit or return is guaranteed.
+        </p>
+      </div>
     </main>
   )
 }

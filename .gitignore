@@ -1,5 +1,19 @@
-/node_modules
+# Logs
+logs
+*.log
+
+# Dependency directories
 node_modules/
-.env
-.env.local
-.env.development.local
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

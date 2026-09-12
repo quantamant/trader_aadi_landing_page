@@ -10,4 +10,5 @@ function TelegramIcon() {
     </svg>
   )
 }
+
 export default TelegramIcon

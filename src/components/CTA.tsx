@@ -1,12 +1,24 @@
-import TelegramIcon from "./TelegramIcon";
+import TelegramIcon from './TelegramIcon'
 
-export const TELEGRAM_URL = 'https://t.me/+21n8Nahi8ENjZTk1'
+interface CTAProps {
+  children: string
+  className?: string
+}
 
-export default function CTA() {
+const TELEGRAM_URL = 'https://t.me/+21n8Nahi8ENjZTk1'
+
+function CTA({ children, className = '' }: CTAProps) {
   return (
-    <a className="main-cta" href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+    <a
+      className={`main-cta ${className}`.trim()}
+      href={TELEGRAM_URL}
+      target="_blank"
+      rel="noreferrer"
+    >
       <TelegramIcon />
-      <span>Join Community Now</span>
+      <span>{children}</span>
     </a>
   )
 }
+
+export default CTA

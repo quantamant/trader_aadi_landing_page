@@ -1,11 +1,11 @@
-export const profileImage = new URL('./../assets/profile.jpg', import.meta.url).href
+import profileImage from '../assets/profile.jpg'
 
-export default function HeroProfileImage() {
-    return(
-         <div className="profile-wrap">
-          <div className="profile-ring">
-            <img src={profileImage} alt="Trader Aadi profile" />
-          </div>
-        </div>
-    )
+function HeroProfileImage() {
+  return (
+    <div className="profile-ring">
+      <img src={profileImage} alt="Trader Aadi" />
+    </div>
+  )
 }
+
+export default HeroProfileImage

@@ -1,25 +1,51 @@
-import { Fragment } from "react/jsx-runtime";
-import CTA from "../components/CTA";
-import Description from "../components/Description";
-import HeroProfileImage from "../components/HeroProfileImage";
-import Title from "../components/Title";
+import HeroProfileImage from '../components/HeroProfileImage'
+import TelegramIcon from '../components/TelegramIcon'
 
+const TELEGRAM_URL = 'https://t.me/+21n8Nahi8ENjZTk1'
 
-export default function Hero(){
-    
-     return(
-        <Fragment> <section className="hero">
-        <div className="hero-glow" />
+function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-glow hero-glow-one" />
+      <div className="hero-glow hero-glow-two" />
 
-       <HeroProfileImage/>
+      <div className="eyebrow">
+        <span />
+        TRADER AADI
+        <span />
+      </div>
 
-      <Title/>
+      <HeroProfileImage />
 
-        <Description/>
+      <h1>
+        Welcome to <span>Trader Aadi</span>
+        <br />
+        Telegram Channel
+      </h1>
 
-        <CTA/>
+      <p className="hero-description">
+        Educational Content, Market Updates এবং Community Discussion-এর জন্য
+        <br className="desktop-break" />
+        আমাদের সাথে Join করুন এবং Trading সম্পর্কে আরও structuredভাবে শিখুন।
+      </p>
 
-      </section>
-      </Fragment>
-     )
+      <a
+        className="main-cta"
+        href={TELEGRAM_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <TelegramIcon />
+        <span>Join Community Now</span>
+      </a>
+
+      <div className="hero-trust">
+        <span>✦</span>
+        Learn • Practice • Improve • Trade
+        <span>✦</span>
+      </div>
+    </section>
+  )
 }
+
+export default Hero

@@ -1,6 +1,6 @@
 # Trader Aadi Telegram Landing Page
 
-A pixel-inspired recreation of the supplied landing-page screenshot using Vite + React + TypeScript.
+Vite + React + TypeScript landing page for the Trader Aadi Telegram channel.
 
 ## Run
 
@@ -9,14 +9,23 @@ npm install
 npm run dev
 ```
 
-Then open the local URL shown by Vite.
-
-## Build
+## Production build
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The supplied profile image is used as the logo/profile image and all Telegram CTAs point to:
+## Telegram URL
 
-`https://t.me/+21n8Nahi8ENjZTk1`
+The CTA buttons currently use:
+
+https://t.me/+21n8Nahi8ENjZTk1
+
+## Profile image
+
+Replace:
+
+`src/assets/profile.jpg`
+
+with another image if needed. Keep the same filename or update the import in `HeroProfileImage.tsx` and `Navbar.tsx`.

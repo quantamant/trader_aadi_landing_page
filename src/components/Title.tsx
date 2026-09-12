@@ -1,9 +1,11 @@
-export default function Title(){
-    return(
-          <h1>
-                  Welcome to <span>trader aadi</span>
-                  <br />
-                  telegram Channel
-                </h1>
-    )
+function Title() {
+  return (
+    <h1>
+      Welcome to <span>Trader Aadi</span>
+      <br />
+      Telegram Channel
+    </h1>
+  )
 }
+
+export default Title
